@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="khX-Qy-OXe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--월별 계획 -->
+        <scene sceneID="tMT-sI-gem">
+            <objects>
+                <viewController id="JNQ-s5-Vey" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3l-Xa-O4g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SNH-gv-1ap"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="월별 계획 " image="note" catalog="system" id="sbt-kd-YAL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhW-ao-ofH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="998"/>
+        </scene>
+        <!--하루 정리 -->
+        <scene sceneID="JRa-bB-Wto">
+            <objects>
+                <viewController id="Ohu-vb-mUo" customClass="PlanViewController" customModule="posible" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5j-Ji-PQc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZXZ-Ip-Hxc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R61-1n-WO9"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="ZXZ-Ip-Hxc" firstAttribute="top" secondItem="R61-1n-WO9" secondAttribute="top" id="OOK-Li-Q1t"/>
+                            <constraint firstAttribute="bottom" secondItem="ZXZ-Ip-Hxc" secondAttribute="bottom" id="Q9b-mC-g4p"/>
+                            <constraint firstItem="R61-1n-WO9" firstAttribute="trailing" secondItem="ZXZ-Ip-Hxc" secondAttribute="trailing" id="XVu-K3-6ML"/>
+                            <constraint firstItem="ZXZ-Ip-Hxc" firstAttribute="leading" secondItem="R61-1n-WO9" secondAttribute="leading" id="iCk-ZV-lub"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="하루 정리 " image="cloud" catalog="system" id="tFd-Hl-CH1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myTableView" destination="ZXZ-Ip-Hxc" id="5BM-zh-Cow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nka-3e-X9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="998"/>
+        </scene>
+        <!--알람-->
+        <scene sceneID="iI5-2a-fpy">
+            <objects>
+                <viewController id="nsr-c3-bmp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E5Z-Sk-S8p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nZ5-8J-cv4"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="알람" image="clock" catalog="system" id="PoR-3a-aeq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vka-gO-ulh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="1001"/>
+        </scene>
+        <!--하루계획 -->
+        <scene sceneID="Y3q-Ml-Ics">
+            <objects>
+                <viewController id="WfD-mh-2GP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24y-L8-6sg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKQ-tK-mgd">
+                                <rect key="frame" x="14" y="120" width="43.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="AeM-8E-tgd"/>
+                                    <constraint firstAttribute="width" constant="43.5" id="hvQ-Ib-Oj2"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="checkmark.square" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Agz-t4-VGk"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="IKQ-tK-mgd" firstAttribute="leading" secondItem="Agz-t4-VGk" secondAttribute="leading" constant="14" id="XgB-X2-TuI"/>
+                            <constraint firstItem="IKQ-tK-mgd" firstAttribute="top" secondItem="Agz-t4-VGk" secondAttribute="top" constant="76" id="p5L-pC-633"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="하루계획 " image="pencil" catalog="system" id="HWn-c7-h8b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6A-sV-Tkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-772" y="998"/>
+        </scene>
+        <!--My Main Tab Bar View Controller-->
+        <scene sceneID="1Mn-nL-XI0">
+            <objects>
+                <tabBarController id="khX-Qy-OXe" customClass="MyMainTabBarViewController" customModule="posible" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GQd-wo-nvK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WfD-mh-2GP" kind="relationship" relationship="viewControllers" id="ElF-Kg-iZb"/>
+                        <segue destination="JNQ-s5-Vey" kind="relationship" relationship="viewControllers" id="wRb-xU-Du9"/>
+                        <segue destination="Ohu-vb-mUo" kind="relationship" relationship="viewControllers" id="reg-ez-Qr2"/>
+                        <segue destination="nsr-c3-bmp" kind="relationship" relationship="viewControllers" id="wBX-YU-xBH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybh-AA-Vfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="cloud" catalog="system" width="128" height="88"/>
+        <image name="note" catalog="system" width="128" height="106"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
