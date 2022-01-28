@@ -10,6 +10,9 @@
 		220AA945279085D300CA71BA /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220AA944279085D300CA71BA /* MyTableViewCell.xib */; };
 		220AA94727908FE200CA71BA /* PlanViewController.File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220AA94627908FE200CA71BA /* PlanViewController.File.swift */; };
 		220AA9492790933500CA71BA /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220AA9482790933500CA71BA /* MyTableViewCell.swift */; };
+		220EB32527A4583E00580062 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220EB32427A4583E00580062 /* TableViewController.swift */; };
+		220EB32727A4585100580062 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220EB32627A4585100580062 /* AddViewController.swift */; };
+		220EB32927A4589600580062 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220EB32827A4589600580062 /* DetailViewController.swift */; };
 		226962EF27907F5500871F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226962EE27907F5500871F04 /* AppDelegate.swift */; };
 		226962F127907F5500871F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226962F027907F5500871F04 /* SceneDelegate.swift */; };
 		226962F327907F5500871F04 /* MyMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226962F227907F5500871F04 /* MyMainTabBarViewController.swift */; };
@@ -42,6 +45,9 @@
 		220AA944279085D300CA71BA /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		220AA94627908FE200CA71BA /* PlanViewController.File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.File.swift; sourceTree = "<group>"; };
 		220AA9482790933500CA71BA /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		220EB32427A4583E00580062 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		220EB32627A4585100580062 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		220EB32827A4589600580062 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		226962EB27907F5500871F04 /* posible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = posible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226962EE27907F5500871F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		226962F027907F5500871F04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				220AA94627908FE200CA71BA /* PlanViewController.File.swift */,
 				220AA9482790933500CA71BA /* MyTableViewCell.swift */,
 				226962F427907F5500871F04 /* Main.storyboard */,
+				220EB32427A4583E00580062 /* TableViewController.swift */,
+				220EB32627A4585100580062 /* AddViewController.swift */,
+				220EB32827A4589600580062 /* DetailViewController.swift */,
 				220AA944279085D300CA71BA /* MyTableViewCell.xib */,
 				226962F727907F5600871F04 /* Assets.xcassets */,
 				226962F927907F5600871F04 /* LaunchScreen.storyboard */,
@@ -268,11 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220EB32727A4585100580062 /* AddViewController.swift in Sources */,
 				226962F327907F5500871F04 /* MyMainTabBarViewController.swift in Sources */,
+				220EB32527A4583E00580062 /* TableViewController.swift in Sources */,
 				226962EF27907F5500871F04 /* AppDelegate.swift in Sources */,
 				226962F127907F5500871F04 /* SceneDelegate.swift in Sources */,
 				220AA9492790933500CA71BA /* MyTableViewCell.swift in Sources */,
 				220AA94727908FE200CA71BA /* PlanViewController.File.swift in Sources */,
+				220EB32927A4589600580062 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
